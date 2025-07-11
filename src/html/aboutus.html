@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="p-3 bg-dark text-white text-center py-3">
+        <h1>Learn more about us</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html">Musicz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="songs.html">Songs</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div id="message"></div>
+        <script>
+            function getMes(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+            var message = getMes('message');
+            if (message) {
+                document.getElementById('message').innerText = message;
+            }
+        </script>
+
+        <p class="lead font-weight-bold" style="font-size: xx-large">Welcome to Musicz</p>
+        <p>A unique collection of songs created by students at LIU. Our project contains some music for other students to listen to.</p>
+        
+        <h2>Future Plans</h2>
+        <p>We are excited about the future of Musicz. Our upcoming plans include:</p>
+        <ul>
+            <li>Students can add their own music to share with other students.</li>
+            <li>Introduce AI to the website to help people decide what to listen to.</li>
+        </ul>
+
+        <h2>Call to Action</h2>
+        <p>Join us in celebrating the musical talents of LIU. Explore our song library, attend our events, and connect with fellow music enthusiasts. We welcome your feedback and ideas to help us grow.</p>
+
+        <h2>Feedback</h2>
+        <form action="aboutus.php" method="post">
+            <div class="form-group">
+                <label for="name">Your Name:</label><br>
+                <input type="text" class="form-control-sm" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label><br>
+                <input type="email" class="form-control-sm" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Your Feedback:</label><br>
+                <textarea class="form-control-lg" id="feedback" name="feedback" rows="4" maxlength="50" required></textarea>
+                <small id="feedbackHelp" class="form-text text-muted">Maximum 50 Characters.</small>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form><br><br>
+
+        <h2>Contact Information</h2>
+        <p>For more information or to get in touch with us, please contact us via email:</p>
+        <ul>
+            <li><a style="color: black;" href="mailto:42220004@students.liu.edu.lb">Muhammad Abdallah</a></li>
+            <li><a style="color: black;" href="mailto:42130168@students.liu.edu.lb">Hadi Mcheimech</a></li>
+        </ul>
+    </div>
+
+    <footer class="bg-light text-center py-3">
+        <div class="Footer">
+            &copy;2024 LIU <br>Muhammad Abdallah<br> Hadi Mcheimech
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    
+</head>
+<body class="helpp">
+<div class="wrapper">
+<form method="POST" action="validation.php" id="formIndex">
+<h1>Login</h1>
+<div id="message"></div>
+<script>
+    function getMes(name,url){
+        if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+
+    }
+    var message=getMes('message');
+    if(message){
+        document.getElementById('message').innerText=message;
+    }
+</script>
+    <div class="input-box">
+        <input name="email" type="email" id="emailInput" placeholder="Email"
+        required>
+
+    </div>
+    <div class="input-box">
+        <input name="password" type="password"
+        placeholder="Password" id="passInput" required>
+    </div>
+
+    <div class="remember-forgot">
+        
+        <a href="forget.html">Forgot password?</a>
+    </div>
+
+    <button type="submit" id="btn">Login</button>
+    
+    
+
+</form>
+<form method="post" action="Register.html">
+    <div class="register-link">
+        <p>Don't have an account? <button type="submit">Register</button></p>
+    </div>
+ 
+
+</form>
+
+
+
+</div>
+
+
+
+    
+</body>
+</html>
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container{
+            margin-top: 20px;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        .song-list{
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 0;
+            list-style: none;
+            justify-content: center; /* Optional: Align items horizontally at the center */
+        }
+
+        .list-group-item {
+            flex: 1 0 auto; 
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .sName{
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+            
+        }
+        footer{
+            bottom: 0;
+            left: 0;
+            position: sticky;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="home.html">Musicz</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="songs.html">Songs</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<main class="container">
+    <div class="d-flex align-content-around flex-wrap">
+    <ul style="background-color: #343a40; padding-top:10px; padding-left:10px;" class="song-list ">
+        
+        <li class="list-group-item sName" data-src="music/A sky full of stars.mp3"><a href="#">A sky full of stars</a></li>
+        <li class="list-group-item sName" data-src="music/Airplanes.mp3"><a href="#">Airplanes</a></li>
+        <li class="list-group-item sName" data-src="music/Back to black.mp3"><a href="#">Back to black</a></li>
+        <li class="list-group-item sName" data-src="music/Bad liar.mp3"><a href="#">Bad liar</a></li>
+        <li class="list-group-item sName" data-src="music/Bohemian rhapsody.mp3"><a href="#">Bohemian rhapsody</a></li>
+        <li class="list-group-item sName" data-src="music/Calm down.mp3"><a href="#">Calm down</a></li>
+        <li class="list-group-item sName" data-src="music/Counting stars.mp3"><a href="#">Counting stars</a></li>
+        <li class="list-group-item sName" data-src="music/Dont stop me now.mp3"><a href="#">Dont stop me now</a></li>
+        <li class="list-group-item sName" data-src="music/Easy on me.mp3"><a href="#">Easy on me</a></li>
+        <li class="list-group-item sName" data-src="music/Here.mp3"><a href="#">Here</a></li>
+        <li class="list-group-item sName" data-src="music/Highway to hell.mp3"><a href="#">Highway to hell</a></li>
+        <li class="list-group-item sName" data-src="music/Hime and i.mp3"><a href="#">Him and I</a></li>
+        <li class="list-group-item sName" data-src="music/Human.mp3"><a href="#">Human</a></li>
+        <li class="list-group-item sName" data-src="music/Hymn for the weekend.mp3"><a href="#">Hymn for the weekend</a></li>
+        <li class="list-group-item sName" data-src="music/I hate u i love u.mp3"><a href="#">I hate u i love u</a></li>
+        <li class="list-group-item sName" data-src="music/Im good.mp3"><a href="#">Im good</a></li>
+        <li class="list-group-item sName" data-src="music/Im not the only one.mp3"><a href="#">Im not the only one</a></li>
+        <li class="list-group-item sName" data-src="music/Let her go.mp3"><a href="#">Let her go</a></li>
+        <li class="list-group-item sName" data-src="music/Never be the same.mp3"><a href="#">Never be the same</a></li>
+        <li class="list-group-item sName" data-src="music/Numb.mp3"><a href="#">Numb</a></li>
+        <li class="list-group-item sName" data-src="music/Rewrite the stars.mp3"><a href="#">Rewrite the stars</a></li>
+        <li class="list-group-item sName" data-src="music/Rockstar.mp3"><a href="#">Rockstar</a></li>
+        <li class="list-group-item sName" data-src="music/Rolling in the deep.mp3"><a href="#">Rolling in the deep</a></li>
+        <li class="list-group-item sName" data-src="music/Someone like you.mp3"><a href="#">Someone like you</a></li>
+        <li class="list-group-item sName" data-src="music/Stay.mp3"><a href="#">Stay</a></li>
+        <li class="list-group-item sName" data-src="music/The middle.mp3"><a href="#">The middle</a></li>
+        <li class="list-group-item sName" data-src="music/Until i found u.mp3"><a href="#">Until i found u</a></li>
+        <li class="list-group-item sName" data-src="music/Without me.mp3"><a href="#">Without me</a></li>
+        <li class="list-group-item sName" data-src="music/Without u.mp3"><a href="#">Without u</a></li>
+        <li class="list-group-item sName" data-src="music/Yellow.mp3"><a href="#">Yellow</a></li>
+        
+    </ul>
+</div>
+</main>
+
+
+
+
+    
+</div>
+
+    <footer class="bg-dark text-light text-center">
+        <div class="card-body">
+            
+            <audio id="audioPlayer" controls class="w-100">
+                <source id="audioSource" src="" type="audio/mpeg">
+            </audio>
+            &copy;LIU
+        </div>
+        
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audioPlayer = document.getElementById('audioPlayer');
+            const audioSource = document.getElementById('audioSource');
+            const songListItems = document.querySelectorAll('.sName');
+
+            songListItems.forEach(function(item) {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const songSrc = item.getAttribute('data-src');
+                    audioSource.src = songSrc;
+                    audioPlayer.load();
+                    audioPlayer.play();
+                });
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
